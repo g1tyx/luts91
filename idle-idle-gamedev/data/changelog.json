@@ -1,0 +1,74 @@
+{
+  "logs":[
+    {
+      "version": "1.0.17",
+      "log": [
+          "added: more researches",
+          "added: retriggering achievements on start",
+          "changed: cpm reward from datamining 20% -> 5% of current cpm"
+        ]
+    },
+    {
+      "version": "1.0.16",
+      "log": [
+          "added: pause on load and pause on recursion setting",
+          "added: auto release threshold setting",
+          "added: total players information in gametab",
+          "changed: balanced contracts",
+          "changed: increases cost of planet searching, analyizing and contacting"
+        ]
+    },
+    {
+      "version": "1.0.14",
+      "log": [
+          "fixed: players of a game directly becoming 0"
+        ]
+    },
+    {
+      "version": "1.0.11",
+      "log": [
+          "added: new achievement",
+          "changed: base contact curve 10 -> 5",
+          "changed: rich parent cost increase 2 -> 4",
+          "changed: learn to learn increase 1.1 -> 1.2",
+          "changed: Money Grabbing to multiplicative",
+          "changed: scaling of contracts",
+          "changed: time for next contract 20m -> 60m",
+          "changed: total fans achievements base goal 10b -> 10m",
+          "changed: capped new players a game can gain by population",
+          "fixed: great feature enabling not saving",
+          "fixed: holiday and party affected by buyamount",
+          "fixed: modifiers of challenges not reseting after they are done"
+        ]
+    },
+    {
+      "version": "1.0.10",
+      "log": [
+          "added: checkbox to enable programming for great and unique features",
+          "added: holiday and party for money",
+          "added: reset buttons for skills",
+          "changed: scaling of contracts",
+          "changed: change maxlevel and base goal of contract achievement",
+          "changed: recursion points 1/1m -> 1/100k",
+          "changed: decreased cost increase of shop items",
+          "changed: increases bp gain from achievements",
+          "changed: skillpoint cost increase 1.10 -> 1.08",
+          "changed: save interval 2s -> 60s",
+          "changed: bandwidth cost increase 4 -> 3.5",
+          "changed: replaced old holiday and party by discounts",
+          "changed: disabled sorting of shop and research for now",
+          "fixed: canceling a challenge triggers speedrun achievement",
+          "fixed: power multi of employees not displayed",
+          "fixed: description of careful programming",
+          "fixed: /s value on progresses not reseting",
+          "fixed: fan tooltip typo"
+        ]
+    },
+    {
+      "version": "1.0.0",
+      "log": [
+          "release"
+        ]
+    }
+  ]
+}
