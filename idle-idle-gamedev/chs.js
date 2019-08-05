@@ -673,6 +673,8 @@ var cnRegReplace = new Map([
     [/^Reward: Intelligence Exp Multi x([\d\.]+); ([\d\.]+) Bonus Points$/, '奖励：智力经验倍数x$1；$2点奖励点'],
     [/^\n                               You got (\d+) Bonus Points! Come back tomorrow for more!                          $/, '你得到$1点奖励点！ 明天再来可以获得更多！'],
     [/^Time: (\d+) Years, (\d+) Days, (\d+) Hours,$/, '时间：$1年，$2天，$3小时，'],
+	[/^Time: (\d+) Hours,$/, '时间：$1小时，'],
+	[/^Time: (\d+) Days, (\d+) Hours,$/, '时间：$1天，$2小时，'],
     [/^\n                               You were gone for ([\d\.]+) Seconds. You gained ([\d\.]+) bonus seconds                          $/, '你离开了$1秒钟。 你获得了$2秒奖励时间'],
     [/^\n                               You were gone for ([\d\.]+) minutes, ([\d\.]+) Seconds. You gained ([\d\.]+) bonus seconds                          $/, '你离开了$1分钟，$2秒。 你获得了$3秒奖励'],
     [/^\n                               You were gone for ([\d\.]+) Days, ([\d\.]+) Hours, ([\d\.]+) minutes, ([\d\.]+) Seconds. You gained ([\d\.]+) K bonus seconds                          $/, '你离开了$1天，$2小时，$3分钟，$4秒。 你获得了$5秒奖励'],
