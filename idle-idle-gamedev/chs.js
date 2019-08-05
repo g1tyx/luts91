@@ -573,7 +573,7 @@ var cnRegReplace = new Map([
     [/^Have ([\d\.]+) K  research points$/, '有 $1 K  研究点'],
     [/^Have ([\d\.]+) research points$/, '有 $1 研究点'],
     [/^Cost: ([\d\.]+) Research Points$/, '有 $1 研究点'],
-    [/^Think of ([\d\.]+) K ideas in total$/, '总共思考$1 K个想法'],
+    [/^Think of ([\d\.] K ideas in total$/, '总共思考$1 K个想法'],
     [/^Have ([\d\.]+) ideas$/, '有 $1 想法'],
     [/^Have ([\d\.]+) fleas$/, '有 $1 跳蚤'],
     [/^Have ([\d\.]+) K research points$/, '有 $1 k研究点'],
