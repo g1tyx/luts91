@@ -33,7 +33,11 @@
     "pExplain": "Pause (Space)",
     "getMoreExplain": "Get daily rewards and unlock achievements to get more bonus points",
     "challengeExplain": "You may select a challenge to modify the game and get special rewards by finishing them.",
+    "starterExplain": "Get 500 BP, 1.5x Power and 1.5x EXP Multi forever",
+    "epicExplain": "Be a real developer and get 2000 BP, 2x Power, 2x EXP Multi and 2x Tick Speed forever!",
     "iniigd":  " in Idle Idle GameDev",
+    "idledice": "Play my other game Idle Dice!",
+    "web": "Web",
     "butcher": "Butcher",
     "power": "Power",
     "unassignAll": "Unassign All",
@@ -106,6 +110,7 @@
     "planetContact": "Contact",
     "dev": "Dev",
     "shop": "Shop",
+    "bpshop": "BP Shop",
     "employees": "Employees",
     "contracts": "Contracts",
     "contract": "Contract",
@@ -327,6 +332,18 @@
         "name": "Marketing Optimizing",
         "desc": "Increases CPM by %3 x publicity"
       },
+      "r_betterTelescope": {
+        "name": "Better Telescope",
+        "desc": "Search Planets %3 times faster"
+      },
+      "r_betterAnalyzing": {
+        "name": "Better Analyzing",
+        "desc": "Analyze Planets %3 times faster"
+      },
+      "r_betterSpaceship": {
+        "name": "Better Spaceship",
+        "desc": "Contact Planets %3 times faster"
+      },
       "i_cent": {
         "name": "Cent decoration",
         "desc": "Hang the first cent you ever earned on the wall to get more Motivation and work %2 faster"
@@ -454,6 +471,14 @@
       "i_betterHaircut": {
         "name": "Better Haircut",
         "desc": "Market %3 times faster"
+      },
+      "i_betterOffice": {
+        "name": "Better Office",
+        "desc": "Structure Code %3 times faster"
+      },
+      "i_betterResearch": {
+        "name": "Better Research Bench",
+        "desc": "Research %3 times faster"
       },
       "serverSize": {
         "name": "Server Size",
