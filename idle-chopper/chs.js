@@ -91,10 +91,6 @@ var cnItems = {
     'BaseDef:': '',
     'better': '',
     'bird': '',
-    'boss': '',
-    'boss,': '',
-    'boss, you can go to the': '',
-    'Boss:1/': '',
     'bots': '',
     'Bots': '',
     'Bots Chop Strength for': '',
@@ -345,7 +341,7 @@ var cnItems = {
     'you can walk faster': '',
     'you have, every tree': '',
     'you have, Use it to buy': '',
-    'You stomp the ground while walking, which removes the grass so you can walk faster': '',
+    'You stomp the ground while walking, which removes the grass so you can walk faster': '当你行走的时候会在地面上踩踏，这会去除草皮，让你走得更快',
     'your': '',
     'Your': '',
     'your bots for some': '',
@@ -353,8 +349,6 @@ var cnItems = {
     'Your helpers stomp the': '',
     '': '',
     //原路返回
-
-
 }
 
 //需处理的前缀
