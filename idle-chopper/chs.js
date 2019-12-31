@@ -328,8 +328,7 @@ var cnItems = {
     'which': '',
     'which removes the': '',
     'while': '',
-    'You stomp the ground while walking, which removes the grass so you can walk faster': '',
-    'your': '当你行走的时候会在地面上踩踏，这会去除草皮，让你走得更快',
+    'You stomp the ground while walking, which removes the grass so you can walk faster': '当你行走的时候会在地面上踩踏，这会去除草皮，让你走得更快',
     //原路返回
 }
 
