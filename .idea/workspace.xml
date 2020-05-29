@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="699537b8-6ac1-4402-b342-5cf8f0553060" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="699537b8-6ac1-4402-b342-5cf8f0553060" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +58,9 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Luts91.github.io/index.html">
       <method v="2" />
     </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Luts91.github.io/idle-idle-gamedev/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Luts91.github.io/node_modules/mdbootstrap/index.html">
       <method v="2" />
     </configuration>
@@ -68,10 +68,12 @@
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.gaDisclaimer.html" />
+      <item itemvalue="JavaScript Debug.index.html (2)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.gaDisclaimer.html" />
       </list>
@@ -99,7 +101,14 @@
       <workItem from="1563607213005" duration="669000" />
       <workItem from="1569458452806" duration="4398000" />
       <workItem from="1569873355657" duration="632000" />
-      <workItem from="1574074249235" duration="704000" />
+      <workItem from="1574074249235" duration="1833000" />
+      <workItem from="1574267052806" duration="578000" />
+      <workItem from="1574323029477" duration="37000" />
+      <workItem from="1575573237313" duration="2513000" />
+      <workItem from="1577374899079" duration="955000" />
+      <workItem from="1583935298246" duration="1758000" />
+      <workItem from="1583937894496" duration="599000" />
+      <workItem from="1584002003818" duration="339000" />
     </task>
     <task id="LOCAL-00001" summary="added adsense">
       <created>1541401240333</created>
@@ -157,7 +166,28 @@
       <option name="project" value="LOCAL" />
       <updated>1569463452940</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated privacy policy">
+      <created>1575575666543</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575575666543</updated>
+    </task>
+    <task id="LOCAL-00010" summary="about">
+      <created>1577375794388</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1577375794388</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added redirect to new website">
+      <created>1584002158687</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584002158687</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +198,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -183,6 +215,9 @@
     <MESSAGE value="added animation to cards" />
     <MESSAGE value="updated kongregate link" />
     <MESSAGE value="updated kongregate link and playstore" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated kongregate link and playstore" />
+    <MESSAGE value="updated privacy policy" />
+    <MESSAGE value="about" />
+    <MESSAGE value="added redirect to new website" />
+    <option name="LAST_COMMIT_MESSAGE" value="added redirect to new website" />
   </component>
 </project>
