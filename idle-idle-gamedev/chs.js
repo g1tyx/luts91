@@ -583,7 +583,7 @@ var cnItems = {
     'Contact 10 planets in total': '总共联系10个行星',
     'Base Quality': '基础质量',
     'Game is paused': '游戏已暂停',
-    'Prog.Power Multi': 'Prog.Power 加成',
+    'Prog.Power Multi': '编程能力 加成',
     'Auto Delete Preference': '自动删除首选项',
     'Engineering  (': '工程符号  (',
     'Logarithmic (e': '对数 (e',
@@ -656,6 +656,7 @@ var cnPrefix = {
     "+": "+",
     " ": " ",
     ": ": "： ",
+    "Version:": "版本:",
 }
 
 //需处理的后缀
@@ -676,6 +677,12 @@ var cnExcludeWhole = [
     /^x?\d+(\.\d+)?[A-Za-z%]{0,2}(\s.C)?\s*$/, //12.34K,23.4 °C
     /^x?\d+(\.\d+)?(e[+\-]?\d+)?\s*$/, //12.34e+4
     /^\s*$/, //纯空格
+    /^([\d\.]+)k \/$/,
+    /^([\d\.]+)M \/$/,
+    /^([\d\.]+)T \/$/,
+    /^([\d\.]+)T 块钱$/,
+    /^([\d\.]+)B \/$/,
+    /^([\d\.]+)ky([\d\.]+)d([\d\.]+)h$/,
     /^\d+(\.\d+)?[A-Za-z]{0,2}.?\(?([+\-]?(\d+(\.\d+)?[A-Za-z]{0,2})?)?$/, //12.34M (+34.34K
     /^(\d+(\.\d+)?[A-Za-z]{0,2}\/s)?.?\(?([+\-]?\d+(\.\d+)?[A-Za-z]{0,2})?\/s\stot$/, //2.74M/s (112.4K/s tot
     /^\d+(\.\d+)?(e[+\-]?\d+)?.?\(?([+\-]?(\d+(\.\d+)?(e[+\-]?\d+)?)?)?$/, //2.177e+6 (+4.01+4
@@ -698,7 +705,7 @@ var cnRegReplace = new Map([
     [/^(\d+)h Bonus Seconds$/, '$1小时奖励时间'],
     [/^Create a game with a quality of (.+) and (.+) initial Players.$/, '创建质量为$1和$2初始玩家的游戏。'],
     [/^Release a game with a playtime of (.+) hours$/, '发布一款游戏，并且有$1小时的玩游戏时间'],
-    [/^Work (\d+) times faster for (\d+) minutes \(affected by tickspeed$/, '以$1倍的速度工作$2分钟\(受tickspeed影响)'],
+    [/^Work (\d+) times faster for (\d+) minutes \(affected by tickspeed$/, '以$1倍的速度工作$2分钟\(受tick速度影响)'],
     [/^Get (\d+) hour of Bonus seconds \((\d+)x speed for$/, '获得$1小时奖励时间 \($2倍速度持续'],
     [/^Get (\d+) hours of Bonus seconds \((\d+)x speed for (\d+)h hours$/, '获得$1小时奖励时间 \($2 倍速度持续 $3 小时'],
     [/^Cost: (\d+) Bonus Points$/, '成本: $1 奖励点'],
@@ -707,6 +714,7 @@ var cnRegReplace = new Map([
     [/^Cost: ([\d\.]+) k Research Points$/, '成本: $1 k 研究点'],
     [/^Cost: (.+) Research Points$/, '成本: $1 研究点'],
     [/^Cost: (.+) Recursion Points$/, '成本: $1 递归点'],
+    [/^We want (.+) bugss... in exchange for resssearch$/, '我们想要 $1 bugs ...以换取研研研研究'],
     [/^(.+) Recursion Points$/, '$1 递归点'],
     [/^Cost: ([\d\.]+) Money$/, '成本: $1 金钱'],
     [/^Cost: (.+) Money$/, '成本: $1 金钱'],
@@ -759,13 +767,13 @@ var cnRegReplace = new Map([
     [/^Reward: Logic Exp Multi x([\d\.]+); ([\d\.]+) Bonus Points$/, '奖励:逻辑经验倍数 x$1；$2奖励点'],
     [/^Reward: Bug Fixing Speed x([\d\.]+); ([\d\.]+) Bonus Points$/, '奖励:错误修复速度x$1；$2奖励点'],
     [/^Reward: Intelligence Exp Multi x([\d\.]+); ([\d\.]+) Bonus Points$/, '奖励：智力经验倍数x$1；$2点奖励点'],
-    [/^\n                               You got (\d+) Bonus Points! Come back tomorrow for more!                          $/, '你得到$1点奖励点！ 明天再来可以获得更多！'],
+    [/^\n(.+)You got (\d+) Bonus Points! Come back tomorrow for more!(.+)$/, '你得到$2点奖励点！ 明天再来可以获得更多！'],
     [/^Time: (\d+) Years, (\d+) Days, (\d+) Hours,$/, '时间：$1年，$2天，$3小时，'],
 	[/^Time: (\d+) Hours,$/, '时间：$1小时，'],
 	[/^Time: (\d+) Days, (\d+) Hours,$/, '时间：$1天，$2小时，'],
-    [/^\n                               You were gone for ([\d\.]+) Seconds. You gained ([\d\.]+) bonus seconds                          $/, '你离开了$1秒钟。 你获得了$2秒奖励时间'],
-    [/^\n                               You were gone for ([\d\.]+) minutes, ([\d\.]+) Seconds. You gained ([\d\.]+) bonus seconds                          $/, '你离开了$1分钟，$2秒。 你获得了$3秒奖励'],
-    [/^\n                               You were gone for ([\d\.]+) Days, ([\d\.]+) Hours, ([\d\.]+) minutes, ([\d\.]+) Seconds. You gained ([\d\.]+) K bonus seconds                          $/, '你离开了$1天，$2小时，$3分钟，$4秒。 你获得了$5秒奖励'],
+    [/^\n(.+)You were gone for (.+) Seconds. You gained (.+) bonus seconds(.+)$/, '你离开了$2秒钟。 你获得了$3秒奖励'],
+    [/^\n(.+)You were gone for (.+) minutes, (.+) Seconds. You gained (.+) bonus seconds(.+)$/, '你离开了$2分钟，$3秒。 你获得了$4秒奖励'],
+    [/^\n(.+)You were gone for (.+) Days, (.+) Hours, (.+) minutes, (.+) Seconds. You gained (.+) bonus seconds(.+)$/, '你离开了$2天，$3小时，$4分钟，$5秒。 你获得了$6秒奖励'],
 
 
 ]);
